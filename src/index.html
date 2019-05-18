@@ -5,26 +5,26 @@
 
 
 <script>
-var interes = prompt("Î ÷åì Âàì õîòåëîñü áû óçíàòü?", "Íàïèøè çäåñü");
-alert("Õîòèòå ïîãîâîðèòü î "+interes+"?");
+var interes = prompt("О чем Вам хотелось бы узнать?", "Напиши здесь");
+alert("Хотите поговорить о "+interes+"?");
 
 function writer(){
-     var b;
-     var q=document.querySelector('.chk').checked;
-      if (q === true){
-        b="Õîðîøèé âûáîð"
-      }
-      else {b="Íå õî÷åøü óåçæàòü? Ïîäóìàé åùå"}
-      var a="Ïîëó÷åííûå äàííûå: "+document.perfecto.firstText.value+" "+document.perfecto.secondText.value+" "+
-      document.perfecto.thirdText.value+" "+document.perfecto.firstDate.value+" "+document.perfecto.secret.value+document.perfecto.Points.value+" "+b;
-      alert(a);
-    }
+var b;
+var q=document.querySelector('.chk').checked;
+if (q === true){
+b="Хороший выбор"
+}
+else {b="Не хочешь уезжать? Подумай еще"}
+var a="Полученные данные: "+document.perfecto.firstText.value+" "+document.perfecto.secondText.value+" "+
+document.perfecto.thirdText.value+" "+document.perfecto.firstDate.value+" "+document.perfecto.secret.value+document.perfecto.Points.value+" "+b;
+alert(a);
+}
 
 </script>
 
 
 <head>
-<title>äîìàøíÿÿ ñòðàíèöà</title>
+<title>домашняя страница</title>
 <meta description="stranica">
 <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
@@ -35,52 +35,52 @@ function writer(){
 
 <font face="Arial" color="blue">
 <h1 align="center">
-Ïîãîâîðèì î Ñåâåðíûõ ñòðàíàõ</h1>
+Поговорим о Северных странах</h1>
 </font>
-  <form name="perfecto" class="mainSquare">
-      <div class="mainSquare_skan">
-<ul><p class="cry">Cêàíäèíàâñêèå ñòðàíû:
-<li class="ra">Íîðâåãèÿ</li>
-<li class="ra">Øâåöèÿ</li>
-<li class="ra">Äàíèÿ</li>
+<form name="perfecto" class="mainSquare">
+<div class="mainSquare_skan">
+<ul><p class="cry">Cкандинавские страны:
+<li class="ra">Норвегия</li>
+<li class="ra">Швеция</li>
+<li class="ra">Дания</li>
 </ul></div>
-      <div class="mainSquare_fin-skan">
-<ul><p class="cry">Ôèíî-ñêàíäèíàâñêèå ñòðàíû:
-<li class="ad">Íîðâåãèÿ</li>
-<li class="ad">Øâåöèÿ</li>
-<li class="ad">Ôèíëÿäèÿ</li>
+<div class="mainSquare_fin-skan">
+<ul><p class="cry">Фино-скандинавские страны:
+<li class="ad">Норвегия</li>
+<li class="ad">Швеция</li>
+<li class="ad">Финлядия</li>
 </ul></div>
-      <div class="mainSquare_sever">
-<ul><p class="cry">Cåâåðíûå ñòðàíû:
-<li>Íîðâåãèÿ</li>
-<li>Øâåöèÿ</li>
-<li>Äàíèÿ</li>
-<li>Ôèíëÿäèÿ</li>
+<div class="mainSquare_sever">
+<ul><p class="cry">Cеверные страны:
+<li>Норвегия</li>
+<li>Швеция</li>
+<li>Дания</li>
+<li>Финлядия</li>
 </ul></p></div>
 
 <img src="img/iFUPQJYV81.jpg">
 
 
 
-<p>Ãîëîñîâàëêà</p>
-<p><input type="radio" name="Ãîëîñîâàëêà">Ñåâåð</p>
-<p><input type="radio" name="Ãîëîñîâàëêà">Þã</p>
-<p><input type="radio" name="Ãîëîñîâàëêà">Çàïàä</p>
-<p><input type="radio" name="Ãîëîñîâàëêà">Âîñòîê</p>
+<p>Голосовалка</p>
+<p><input type="radio" name="Голосовалка">Север</p>
+<p><input type="radio" name="Голосовалка">Юг</p>
+<p><input type="radio" name="Голосовалка">Запад</p>
+<p><input type="radio" name="Голосовалка">Восток</p>
 <p>
 
 
 </p>
 
 
-<p>Êàêàÿ ñòðàíà âàøà ëþáèìàÿ?</p>
-<p><input type="checkbox" name="Ñòðàíà">Äàíèÿ</p>
-<p><input type="checkbox" name="Ñòðàíà">ßïîíèÿ</p>
-<p><input type="checkbox" name="Ñòðàíà">Áðàçèëèÿ</p>
-<p><input type="checkbox" name="Ñòðàíà">Èñïàíèÿ</p>
-    <label><input type="checkbox" name="dontknow" class="chk">Õî÷ó óåõàòü</label>
+<p>Какая страна ваша любимая?</p>
+<p><input type="checkbox" name="Страна">Дания</p>
+<p><input type="checkbox" name="Страна">Япония</p>
+<p><input type="checkbox" name="Страна">Бразилия</p>
+<p><input type="checkbox" name="Страна">Испания</p>
+<label><input type="checkbox" name="dontknow" class="chk">Хочу уехать</label>
 
-<right><input type="button" value="Ââåðõ"></right>
+<right><input type="button" value="Вверх"></right>
 
 
 
